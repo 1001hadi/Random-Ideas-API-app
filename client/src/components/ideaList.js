@@ -41,7 +41,7 @@ class IdeaList {
 
   async deleteIdea(ideaId) {
     try {
-      //delete from server
+      //delete from server //
       const res = await IdeasApi.deleteIdea(ideaId);
       this._ideas.filter((idea) => idea._id !== ideaId);
       this.getIdeas();
